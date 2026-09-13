@@ -1,0 +1,8 @@
+{
+  "name": "10:22 المحاسبة ببساطة وإتقان - بكالوريا 2027",
+  "description": "الكتاب الخارجي التعليمي الشامل والتفاعلي في المحاسبة المالية للبكالوريا المصرية",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #F9F7F2;
+    color: #1D1D1B;
+    font-family: 'Cairo', system-ui, sans-serif;
+  }
+  h1, h2, h3, .font-serif-editorial {
+    font-family: 'Amiri', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Editorial Style Utilities */
+.editorial-canvas {
+  background-color: #F9F7F2;
+}
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(29, 29, 27, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(29, 29, 27, 0.04);
+}
+
+.editorial-card-dark {
+  background-color: #1D1D1B;
+  color: #F9F7F2;
+  border: 1px solid rgba(29, 29, 27, 0.4);
+}
+
+.editorial-badge {
+  border: 1px solid #1D1D1B;
+  color: #1D1D1B;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.editorial-badge-accent {
+  background-color: #C4A484;
+  color: #1D1D1B;
+  font-weight: 700;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+  body {
+    background-color: #F9F7F2;
+    color: #000000 !important;
+  }
+}
+
+/* Focus Mode Fluid Page-Fill and Proportional Typography */
+.focus-mode-container {
+  width: 100%;
+  max-width: 96% !important;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1536px) {
+  .focus-mode-container {
+    max-width: 93% !important;
+  }
+}
+
+.focus-mode-scale-normal {
+  font-size: 100%;
+}
+
+.focus-mode-scale-large {
+  font-size: 112%;
+}
+
+.focus-mode-scale-xlarge {
+  font-size: 125%;
+}
+
+.focus-mode-scale-huge {
+  font-size: 138%;
+}
